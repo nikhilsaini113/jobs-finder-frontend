@@ -25,7 +25,20 @@ const ListLinks = ({ links }) => (
   </div>
 );
 export default function Component5() {
-  const [links, setLinks] = useState();
+  const [links, setLinks] = useState([
+    { a: 1, b: 2 },
+    { a: 1, b: 2 },
+    { a: 1, b: 2 },
+    { a: 1, b: 2 },
+    { a: 1, b: 2 },
+    { a: 1, b: 2 },
+    { a: 1, b: 2 },
+    { a: 1, b: 2 },
+    { a: 1, b: 2 },
+    { a: 1, b: 2 },
+    { a: 1, b: 2 },
+    { a: 1, b: 2 },
+  ]);
   useEffect(() => {}, [links]);
 
   return (
@@ -37,6 +50,14 @@ export default function Component5() {
       ) : (
         <div></div>
       )}
+      <center>
+        <br></br>
+        <br></br>
+        <br></br>
+        <a href="#top" className="x5">
+          Take me to the Top
+        </a>
+      </center>
       <div className="x1">
         <p className="x2">
           Made for LNMHacks 6.0 by Alok, Nikhil, Manik & Suyash
