@@ -11,6 +11,7 @@ function App() {
 
   return (
     <>
+      <section id="top"></section>
       <Component1 />
       <Component2 />
       <Component3 />

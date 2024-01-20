@@ -25,7 +25,20 @@ const ListLinks = ({ links }) => (
   </div>
 );
 export default function Component5() {
-  const [links, setLinks] = useState(null);
+  const [links, setLinks] = useState([
+    { a: 1, b: 2 },
+    { a: 1, b: 2 },
+    { a: 1, b: 2 },
+    { a: 1, b: 2 },
+    { a: 1, b: 2 },
+    { a: 1, b: 2 },
+    { a: 1, b: 2 },
+    { a: 1, b: 2 },
+    { a: 1, b: 2 },
+    { a: 1, b: 2 },
+    { a: 1, b: 2 },
+    { a: 1, b: 2 },
+  ]);
   useEffect(() => {}, [links]);
 
   return (
