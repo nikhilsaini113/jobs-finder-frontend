@@ -26,10 +26,14 @@ const ListLinks = ({ links }) => (
 );
 export default function Component5() {
   const [links, setLinks] = useState(null);
-  useEffect(() => {}, [links]);
-
+  useEffect(() => {
+    if (links) {
+      window.location.hash = "#bottom";
+    }
+  }, [links]);
   return (
     <div>
+      <section id="bottom"></section>
       {links ? (
         <div style={{ display: "flex", justifyContent: "center" }}>
           <ListLinks links={links} />
